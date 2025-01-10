@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Please fill out the form below or reach us through our contact information.</p>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>contact@yourcompany.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Business Street, New York, NY</p>
+            </div>
+        </div>
+        
+        <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
+
+            <input type="hidden" name="access_key" value="9aa988ec-9ec6-4d42-aa80-91b128cecfe4">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="contact" placeholder="Contact number" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+</body>
+</html>
