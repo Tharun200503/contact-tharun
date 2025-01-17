@@ -1,43 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <div class="contact-container">
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you! Please fill out the form below or contact me using our contact information.</p>
-        
-        <div class="contact-info">
-            <div class="info-item">
-                <i class="fas fa-phone-alt"></i>
-                <p>+(91) 8608234635</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <p>tharunas5002@gmail.com</p>
-            </div>
-            <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Chennai, Tamilnadu</p>
-            </div>
+<!-- Website - craftycodeverse -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact - Tharun A S</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">tharunas5002@gmail.com</div>
+          </div>
+
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+91 8608234635</div>
+          </div>
+
+          <div class="whatsapp details">
+            <i class="fab fa-whatsapp"></i>
+            <div class="topic">Whatsapp</div>
+            <div class="text-one">+91 8608234635</div>
+          </div>
+
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Chennai, TamilNadu</div>
+            <div class="text-two">India</div>
+          </div>
+
         </div>
+        <div class="right-side">
+          <div class="topic-text">Send me a message</div>
+          <p>Please fill out the form below with your details and message. It's my pleasure to help you.</p>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="9aa988ec-9ec6-4d42-aa80-91b128cecfe4" />
+            <div class="input-box">
+              <input type="text" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="input-box">
+              <input type="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="input-box">
+              <input type="tel" name="contact" placeholder="Enter your Contact number" required>
+            </div>
+            <div class="input-box message-box">
+              <textarea name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            
+            <div class="button">
+              <input type="submit" value="Send Now" />
+            </div>
+          </form>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7387.026110465783!2d80.09695469068151!3d13.11323804886102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52627a2796358b%3A0x3e2886251ab77fc0!2sTNHB%20Mig%20V%20Block%2C%20Avadi%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1737114314362!5m2!1sen!2sin" 
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </figure>
+          </section>
+
+          <div style="text-align:center;font-size:14px;padding-bottom:20px;">Reach me on GitHub <a href="https://github.com/Tharun200503" target="_blank" 
+            style="color:#ff5e63;font-weight:bold;">Tharun200503</a></div>
         
-        <form action="https://api.web3forms.com/submit" method="post" class="contact-form">
+          <div class="footer-bottom">
+            <p>&copy; 2025 Tharun A S. All Rights Reserved.</p>
+            <!-- <p>Made by Tharun A S</p> -->
 
-            <input type="hidden" name="access_key" value="9aa988ec-9ec6-4d42-aa80-91b128cecfe4">
-
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="tel" name="contact" placeholder="Contact number" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
